@@ -1,8 +1,9 @@
 ---
-title: Simply Navigation
+title: Simply Navigation readme
 ---
 
-# This is a dead simple lightweight navigation built with flexbox and vanilla JavaScript
+# Simply Navigation
+This is a dead simple lightweight navigation built with flexbox and vanilla JavaScript
 [Demo is here](https://codepen.io/obscuredetour/full/XxNWLY/)
 
 ## The gist
