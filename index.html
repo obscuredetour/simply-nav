@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simply Navigation</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="nav-wrapper">
+    <nav class="nav" role="navigation">
+      <span class="toggleNav">
+        <svg class="svg-hamburger" viewBox="0 0 1536 1280" xmlns="http://www.w3.org/2000/svg">
+          <path class="svg-hamburger-path" d="M1536 1088v128q0 26-19 45t-45 19H64q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19H64q-26 0-45-19T0 704V576q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19H64q-26 0-45-19T0 192V64q0-26 19-45T64 0h1408q26 0 45 19t19 45z" fill="rgba(226, 241, 236, 20.85)" />
+        </svg>
+      </span> 
+      <a class="nav__logo" href="#">
+        <img class="logo logo-small" id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/480px-JavaScript-logo.png" alt="Logo">
+      </a>
+      <ul class="nav__list" id="sideNav">
+        <div class="nav__list-left">
+          <a class="closeBtn">
+            <svg class="svg-close" viewBox="0 0 1188 1188" xmlns="http://www.w3.org/2000/svg">
+              <path class="svg-close-path" d="M1188 956q0 40-28 68l-136 136q-28 28-68 28t-68-28L594 866l-294 294q-28 28-68 28t-68-28L28 1024Q0 996 0 956t28-68l294-294L28 300Q0 272 0 232t28-68L164 28q28-28 68-28t68 28l294 294L888 28q28-28 68-28t68 28l136 136q28 28 28 68t-28 68L866 594l294 294q28 28 28 68z" fill="rgba(226, 241, 236, 0.85)" />
+            </svg>
+          </a>
+          <li>
+            <a class="nav__item" href="#">Home</a>
+          </li>
+          <li>
+            <a class="nav__item" href="#">Link</a>
+          </li>
+          <li>
+            <a class="nav__item" href="#">Second Link</a>
+          </li>
+          <li>
+            <a class="nav__item" href="#">Third Link</a>
+          </li>
+          <li>
+            <a class="nav__item" href="#last-section">Last Section</a>
+          </li>
+        </div>
+        <div class="nav__list-right">
+          <div class="page__overlay"></div>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    
+    <section>
+      <h1>Simply Navigation</h1>
+    
+    <h4>Lightweight simple navigation built with flexbox and vanilla JavaScript</h4>
+    
+    <p>This is just a placeholder for an actual page, to show off this navigation component. This navigation solution is built entirely using Flexbox and vanilla JavaScript. Below are some key takeaways.</p>
+      
+      <ul>
+        <li>No dependencies. Built using Flexbox & vanilla JavaScript only.</li>
+        <li>Fully responsive.</li>
+        <li>Mobile menu closes when selecting a link, try it. Open the mobile menu and click on the 'Last Section'</li>
+        <li>Easy close mobile menu is closable via entire top row and right side page overlay</li>
+      </ul>
+      <h3>Customizable</h3>
+      <ul>
+        <li>Breakpoint variable - default at 800px</li>
+        <li>Sticky navigation bar available</li>
+        <ul>
+          <li>Toggle <button>Sticky Nav</button> Sticky Nav is <span class="sticky-on-off"><strong>Off</strong></span></li>
+          <li>Note: Sticky navigation bar requires padding and/or margin on the parent or adjacent element. For example, on this page the adjacent <em>main</em> HTML element has a top margin of 6.5rem (nav height is 4.5rem) </li>
+        </ul>
+      </ul>
+      <h3>Another heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, iure dolorem consequuntur tenetur quasi assumenda voluptas est quae doloremque praesentium error, vel itaque pariatur dolores.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A natus deserunt quaerat assumenda explicabo! Explicabo placeat autem quod dolore! Ab molestias aliquam alias aut dolores quibusdam tempora qui velit rem dolorum, iusto deserunt architecto soluta aperiam voluptas perspiciatis excepturi saepe, et optio non. Sapiente, tenetur!</p>
+      <h3 id="last-section">Last heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sint doloribus eveniet voluptate molestias. Modi dicta expedita minima iusto ex eligendi, neque, ratione deleniti recusandae consectetur sunt! Id facere, autem consequuntur placeat minima odio ipsum nihil vel? Iusto dolorem aliquam adipisci aliquid magnam veniam, et nesciunt expedita placeat error praesentium?</p>
+    </section>
+    
+  </main>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>
