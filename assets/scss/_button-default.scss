@@ -1,0 +1,22 @@
+.button-default {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $alto;
+  background: $stone;
+  font-weight: 600;
+  border: 0;
+  border-radius: 20px;
+  font-size: 1rem;
+  margin: 0 0.125rem;
+  padding: 0.3125rem 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  z-index: 2;
+  &:hover {
+    color: $alto;
+    background: $indigo;
+  }
+}

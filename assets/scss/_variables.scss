@@ -16,3 +16,49 @@ $text-color-nop: hsl(206, 47%, 97%);
 
 $link-color: #F0DB4F; //yellow
 $link-color-hover: darken($link-color, 15%);
+
+////////////
+$font-sans: -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans','Helvetica Neue', Arial, sans-serif;
+
+// background colors & shades of grays
+$dark-taupe: hsl(42, 15%, 13%);
+$dusk: hsl(40, 13%, 23%);
+$armadillo: hsl(38, 11%, 28%);
+$tapir: hsl(41, 9%, 35%);
+$olive-haze: hsl(41, 8%, 48%);
+$dawn: hsl(41, 8%, 61%);
+$tide: hsl(39, 11%, 69%);
+$cocoa-gray: hsl(40, 15%, 80%);
+$carrara: hsl(43, 13%, 90%);
+$beige: hsl(40, 23%, 97%);
+
+$umber: hsl(15, 86%, 30%);
+$rust: hsl(22, 82%, 39%);
+$ember: hsl(29, 80%, 44%);
+$ocher: hsl(36, 77%, 49%);
+$goldenrod: hsl(42, 87%, 55%);
+$banana: hsl(44, 92%, 63%);
+$dandelion: hsl(48, 94%, 68%);
+$lemon: hsl(48, 95%, 76%);
+$pale-yellow: hsl(48, 100%, 88%);
+$floral-white: hsl(49, 100%, 96%);
+
+$jet: hsl(0, 0%, 13%);
+$space: hsl(0, 0%, 15%);
+$dust: hsl(0, 0%, 19%);
+$raven: hsl(0, 0%, 23%);
+$stone: hsl(0, 0%, 27%);
+$mine: hsl(0, 0%, 32%);
+$asher: hsl(0, 0%, 38%);
+$boulder: hsl(0, 0%, 49%);
+$heather: hsl(0, 0%, 62%);
+$gray: hsl(0, 0%, 69%);
+$alto: hsl(0, 0%, 81%);
+$pearl: hsl(0, 0%, 88%);
+$alabaster: hsl(0, 0%, 97%);
+
+// accents
+$indigo: hsl(227, 42%, 51%); //button hover
+$sky: hsl(225, 57%, 67%); //highlight
+$cornflower: hsl(224, 67%, 76%); //link
+$periwinkle: hsl(221, 78%, 86%); //link hover

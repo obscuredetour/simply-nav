@@ -1,1 +1,13 @@
 @import '_base';
+@import '_nav-wrapper';
+@import '_burger-squeeze';
+
+//--------- styling for rest of page -------//
+main {
+  margin: 6.5rem auto 0 auto;
+  > section {
+    padding: 1rem;
+    max-width: 60rem;
+    margin: 0 auto; 
+  }
+}
