@@ -1,0 +1,18 @@
+// nav breakpoint variable
+$breakpoint: 800px;
+
+// Background colors
+$darkest: #1d1d1d;
+$darker: lighten($darkest, 5%);
+$dark: lighten($darkest, 15%);
+$darkish: #707875;
+$gray: #CACFCC;
+
+//--- Page text colors ---//
+
+//nav link color
+$text-color: hsl(204, 4%, 75%);
+$text-color-nop: hsl(206, 47%, 97%);
+
+$link-color: #F0DB4F; //yellow
+$link-color-hover: darken($link-color, 15%);
