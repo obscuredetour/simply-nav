@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="left">
   <a href="https://obscuredetour.github.io/simply-nav/">
     <img width=580 src="assets/images/simply-nav.svg">
@@ -16,6 +17,12 @@
 
 # Simply Navigation
 This is a dead simple lightweight navigation built with flexbox and vanilla JavaScript
+=======
+# Simply Navigation
+This is a dead simple lightweight navigation built with flexbox and vanilla JavaScript
+
+Try it here [https://obscuredetour.github.io/simply-nav/](https://obscuredetour.github.io/simply-nav/)
+>>>>>>> master
 
 Try it here [https://obscuredetour.github.io/simply-nav/](https://obscuredetour.github.io/simply-nav/)
 
@@ -24,6 +31,10 @@ Try it here [https://obscuredetour.github.io/simply-nav/](https://obscuredetour.
 - Easy close mobile menu. Mobile menu closable via entire top row and right side page overlay.
 - Mobile menu closes when selecting a link. Useful so the mobile user doesn't have to close the menu after selecting an anchor link on the current page. Try by opening the [mobile menu](https://codepen.io/obscuredetour/full/XxNWLY/) and click on the 'Last Section'.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 ### Customizable
 
 - Breakpoint variable - default at 800px.
