@@ -1,0 +1,71 @@
+//helpers
+.image {
+  border: 0;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  > img {
+    display: block;
+    border-radius: 3px;
+  }
+  &.-left, &.-right {
+    max-width: 35%;
+    > img {
+      width: 100%;
+      border-radius: 3px;
+    }
+  }
+  &.-left {
+    float: left;
+    padding: 0 1rem 0.5rem 0;
+    top: 0.25rem;
+  }
+  &.-right {
+    float: right;
+    padding: 0 0 0.5rem 1rem;
+    top: 0.25rem;
+  }
+  &.-scale {
+    display: block;
+    max-width: 60%;
+    margin-bottom: 1rem;
+    height: auto;
+  }
+  &.-fit {
+    display: block;
+    margin: 0 0 1.5rem 0;
+    width: 100%;
+    > img {
+      width: 100%;
+      border-radius: 2px;
+    }
+  }
+}
+
+._overflowy-hidden { overflow-y: hidden !important }
+
+._title {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 13px;
+  color: $pearl;
+  margin: 12px 0 8px;
+}
+
+//text colors
+._heather {
+  color: $heather;
+}
+._sky {
+  color: $sky;
+}
+
+// spacing
+// negative margins
+._mt1, ._mt1:first-of-type { margin-top: -1rem }
+._mt2, ._mt2:first-of-type { margin-top: -2rem }
+._mthalf, ._mthalf:first-of-type { margin-top: -0.5rem }
+._mt0, ._mt0:first-of-type { margin-top: 0 }

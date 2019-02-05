@@ -2,12 +2,16 @@
 @import '_nav-wrapper';
 @import '_burger-squeeze';
 
+@import '_button-default';
+@import '_image';
+
 //--------- styling for rest of page -------//
 main {
-  margin: 6.5rem auto 0 auto;
+  margin: 0 auto;
+  padding-top: 6.5rem;
   > section {
     padding: 1rem;
-    max-width: 60rem;
+    max-width: 40rem;
     margin: 0 auto; 
   }
 }

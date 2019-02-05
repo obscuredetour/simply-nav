@@ -12,41 +12,76 @@
 <body>
   <!-- Navigation / nav-wrapper component -->
   <header class="nav-wrapper">
-    <nav class="nav" role="navigation">
-      <span class="toggleNav burger burger-squeeze">
+    <nav class="nav">
+      <button class="toggle-nav" type="button">
+        <div class="burger -squeeze" type="button">
+          <span class="burger-lines"></span>
+        </div>
+      </button>
+      <!-- <button class="toggle-nav burger -squeeze" type="button">
         <span class="burger-lines"></span>
-      </span>
+      </button> -->
       <a class="logo-link" href="#">
         <img class="logo" id="logo" src="assets/images/logo.svg" alt="Logo">
       </a>
-      <ul class="nav__list nav-list" id="sideNav">
-        <div class="nav__list-left list -left">
+      <ul class="nav-list" role="navigation">
+        <div class="list -left">
           <li class="item">
-            <a class="nav__item link" href="#">Home</a>
+            <a class="link" href="#">Home</a>
           </li>
           <li class="item">
-            <a class="nav__item link" href="#">Link</a>
+            <a class="link" href="#">Link</a>
           </li>
           <li class="item">
-            <a class="nav__item link" href="#">Second Link</a>
+            <a class="link" href="#">Second Link</a>
           </li>
           <li class="item">
-            <a class="nav__item link" href="#">Third Link</a>
+            <a class="link" href="#">Third Link</a>
           </li>
           <li class="item">
-            <a class="nav__item link" href="#last-section">Last Section</a>
+            <a class="link" href="#last-section">Last Section</a>
           </li>
         </div>
-        <div class="nav__list-right list -right">
-          <div class="page__overlay overlay"></div>
+        <div class="list -right">
+          <div class="overlay"></div>
         </div>
       </ul>
     </nav>
   </header>
-  <!-- <main>
-    <section>
-    </section>
-  </main> -->
+  <main>
+    
+      <section>
+      <span class="image -left">
+        <img src="assets/images/logo.svg" alt="Simply nav logo">
+      </span>
+      <h1 class="_mt0">Simply Navigation</h1>      
+      <h4 class="_mthalf">Lightweight simple navigation built with flexbox and vanilla JavaScript</h4>
+      
+      <p>This is just a placeholder for an actual page, to show off this navigation component. This navigation solution is built entirely using Flexbox and vanilla JavaScript. Below are some key takeaways.</p>
+        
+        <ul>
+          <li>No dependencies. Built using Flexbox & vanilla JavaScript only.</li>
+          <li>Fully responsive.</li>
+          <li>Mobile menu closes when selecting a link, try it. Open the mobile menu and click on the 'Last Section'</li>
+          <li>Easy close mobile menu is closable via entire top row and right side page overlay</li>
+        </ul>
+        <h3>Customizable</h3>
+        <ul>
+          <li>Breakpoint variable - default at 800px</li>
+          <li>Sticky navigation bar available</li>
+          <ul>
+            <li>Toggle <button class="button-default">Sticky Nav</button> Sticky Nav is <span class="sticky-text"><strong>Off</strong></span></li>
+            <li>Note: Sticky navigation bar requires padding and/or margin on the parent or adjacent element. For example, on this page the adjacent <em>main</em> HTML element has a top margin of 6.5rem (nav height is 4.5rem) </li>
+          </ul>
+        </ul>
+        <h3>Another heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, iure dolorem consequuntur tenetur quasi assumenda voluptas est quae doloremque praesentium error, vel itaque pariatur dolores.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A natus deserunt quaerat assumenda explicabo! Explicabo placeat autem quod dolore! Ab molestias aliquam alias aut dolores quibusdam tempora qui velit rem dolorum, iusto deserunt architecto soluta aperiam voluptas perspiciatis excepturi saepe, et optio non. Sapiente, tenetur!</p>
+        <h3 id="last-section">Last heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sint doloribus eveniet voluptate molestias. Modi dicta expedita minima iusto ex eligendi, neque, ratione deleniti recusandae consectetur sunt! Id facere, autem consequuntur placeat minima odio ipsum nihil vel? Iusto dolorem aliquam adipisci aliquid magnam veniam, et nesciunt expedita placeat error praesentium?</p>
+      </section>
+      
+    </main>
 
 
 

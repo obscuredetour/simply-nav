@@ -1,12 +1,12 @@
 .nav-wrapper {
   // bkg color is optional
-  background-color: $dark-taupe;
+  background-color: $jet;
   // For a fixed header simply change below value to 'fixed' or apply '-sticky' class
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 4.5rem;
+  min-height: $nav-height;
   width: 100%;
   margin: 0 auto;
   z-index: 95;
@@ -22,36 +22,42 @@
   > .nav {
     max-width: 80rem;
     width: 100%;
-    height: 100%;
+    height: $nav-height;
     margin: 0 auto;
     padding: 0 0.5rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    > .burger-squeeze {
+    > .toggle-nav {
       z-index: 91;
-      // left: 0.5rem;
-      // position: absolute;
       transition: all 0.3s;
       -webkit-transition: all 0.3s;
+      @media all and (min-width: $breakpoint) { display: none }
     }
   }
 }
 
+//remove default button styling
+.toggle-nav {
+  background-color: transparent;
+  cursor: pointer;
+  box-shadow: none;
+  border: 0;
+  outline: none;
+  margin: 0;
+  padding: 0.5rem;
+}
+
 .logo-link {
   z-index: 90;
-  border-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0.5rem;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform-style: preserve-3d;
-  // position: absolute;
-  right: 1rem;
   > .logo {
+    max-width: 60px;
+    width: 100%;
+    height: auto;
     z-index: 92;
-    max-height: 3.5rem;
-    max-width: 100%;
     backface-visibility: hidden;
     transform-style: preserve-3d;
     -webkit-backface-visibility: hidden;
@@ -62,17 +68,17 @@
 }
 
 .nav-list {
-  background-color: $dark-taupe;
+  background-color: transparent;
   list-style: none;
   margin: 0;
   padding: 0;
   display: block;
-  position: fixed;
+  position: absolute;
   top: 4.5rem;
   bottom: 0;
   left: 0;
   width: 0;
-  min-height: 102vh;
+  min-height: 100vh;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
   z-index: 99;
@@ -81,9 +87,10 @@
   transform-style: preserve-3d;
   -webkit-backface-visibility: hidden;
   -webkit-transform-style: preserve-3d;
+  &.-open { width: 100% }
   > .list {
     &.-left {
-      background: $dark-taupe;
+      background: $jet;
       width: 60%;
       height: 100%;
       position: relative;
@@ -96,7 +103,6 @@
     display: flex;
     padding: 0;
     border-bottom: 1px solid transparentize($gray, 0.5);
-    &:first-child { margin-top: 1rem }
     &:last-child { border-bottom: 0 }
   }
   > .list > .item > .link {
@@ -114,12 +120,51 @@
   > .list > .overlay {
     width: 40%;
     height: 100%;
-    background: transparentize($dark, 0.35);
+    background: transparentize($raven, 0.35);
     position: absolute;
     right: 0;
     top: 0;
     cursor: pointer;
   }
+  @media all and (min-width: $breakpoint) {
+    top: unset;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: initial;
+    background: transparent;
+    z-index: 1;
+    overflow: hidden;
+    > .list.-left, > .list.-right {
+      overflow: hidden;
+      &.-left {
+        height: 100%;
+        width: 100%;
+        border-top: 0;
+        background: transparent;
+        display: flex;
+        align-items: center;
+      }
+      &.-right {
+        display: none;
+        z-index: -1;
+      }
+    }
+    > .list > .item { 
+      margin-left: 1.5rem;
+      margin-bottom: 0;
+      border-bottom-color: transparent;
+      justify-content: flex-start;
+    }
+    > .list > .item > .link { 
+      border-bottom: 2px solid transparent;
+      display: block;
+      flex-basis: unset;
+      background: transparent;
+      padding: 1.25rem 0;
+      font-size: 1rem;
+      outline: 0;
+      transition: all 0.2s ease-in-out;
+    }
+  }
 }
-
-#sideNav.open { width: 100% }
