@@ -8,6 +8,14 @@ All notable changes to this project will be documented in this file.
 - SCSS.
 - Keep logo on the same side as desktop?
 
+## [1.1.3] - 2019-02-05
+### Changed
+- All things flex, removed all absolute positioning except for header nav.
+- Better JS/CSS implementation to prevent page scrolling when mobile menu is active.
+- Restructured JS items.
+- Menu button is now an actual button, reset browser styles.
+- Need to rewrite docs and readme.
+
 ## [1.1.2] - 2019-02-04
 ### Changed
 - Rewrote the close on click JS function.

@@ -6,18 +6,18 @@
   const burger = document.querySelector('.burger');
   const pageOverlay = document.querySelector('.overlay');
   const body = document.querySelector('body');
+  const html = document.querySelector('html');
 
   // Nav listeners
   toggleNavBtn.addEventListener('click', toggleNav);
   pageOverlay.addEventListener('click', toggleNav);
-  // Nav funtion
+
+  // Nav funtion (toggle)
   function toggleNav() {
     sideNav.classList.toggle('-open');
     burger.classList.toggle('open');
-    body.classList.toggle('_overflowy-hidden');
-    // if (sideNav.classList.contains('-open')) {
-    //   sideNav.addEventListener('touchmove', (e) => { e.preventDefault() })
-    // }
+    body.classList.toggle('_disableScroll');
+    html.classList.toggle('_disableScroll');
   };
 
   // (on mobile) close nav menu when link is clicked
@@ -26,20 +26,4 @@
   navLinks.forEach(el => {
     el.addEventListener('click', (event) => { toggleNav() });
   });
-})();
-
-
-//non related - this can be deleted
-(stickyNav => {
-  const button = document.querySelector('.button-default');
-  const onOffHTML = document.querySelector('.sticky-text');
-  const on = '<strong>On</strong>';
-  const off = '<strong>Off</strong>';
-  const navWrapper = document.querySelector('.nav-wrapper');
-
-  button.addEventListener('click', toggleStickyNav => {
-    navWrapper.classList.toggle('-sticky');
-    (navWrapper.classList.contains('-sticky') ? onOffHTML.innerHTML = on : onOffHTML.innerHTML = off);
-  });
-
 })();
