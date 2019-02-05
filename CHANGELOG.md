@@ -3,10 +3,16 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 ### Add
-- Components.
 - Create gif for closing of mobile menu on click.
-- SCSS.
-- Keep logo on the same side as desktop?
+### Change
+- Rewrite docs and readme.
+
+## [1.1.4] - 2019-02-05
+### Changed
+- Active (open) mobile menu prevents page scrolling, but allows scrolling the nav items if they extend beyond the screen. (not tested on iOS)
+- Due to the above implementation, `overflow: hidden` cannot be used to 'hide' the nav when in the closed state. This resulted in moving it offscreen by `left: -15rem`.
+- Menu animation changed to ease-in-out b/c nav is now located offscreen. The cubic bezier bounce effect was somewhat jarring.
+- Removed all uncessary `z-index` values.
 
 ## [1.1.3] - 2019-02-05
 ### Changed
