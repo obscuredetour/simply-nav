@@ -9,6 +9,13 @@ All notable changes to this project will be documented in this file.
 
 ## [1.1.4] - 2019-02-05
 ### Changed
+- Logo update.
+- Readme and docs.
+- JS restructured.
+- Bug introduced on burger close not syncing correctly
+
+## [1.1.4] - 2019-02-05
+### Changed
 - Active (open) mobile menu prevents page scrolling, but allows scrolling the nav items if they extend beyond the screen. (not tested on iOS)
 - Due to the above implementation, `overflow: hidden` cannot be used to 'hide' the nav when in the closed state. This resulted in moving it offscreen by `left: -15rem`.
 - Menu animation changed to ease-in-out b/c nav is now located offscreen. The cubic bezier bounce effect was somewhat jarring.

@@ -14,7 +14,7 @@
   <header class="nav-wrapper">
     <nav class="nav">
       <button class="toggle-nav" type="button">
-        <div class="burger -squeeze" type="button">
+        <div class="burger -squeeze -offset" type="button">
           <span class="burger-lines"></span>
         </div>
       </button>
@@ -49,29 +49,31 @@
 
     <section>
       <span class="image -left">
-        <img src="assets/images/logo.svg" alt="Simply nav logo">
+        <img src="assets/images/logo-full.svg" alt="Simply nav logo">
       </span>
       <h1 class="_mt0">Simply Navigation</h1>
       <h4 class="_mthalf">Lightweight simple navigation built with flexbox and vanilla JavaScript</h4>
 
-      <p>This is just a placeholder for an actual page, to show off this navigation component. This navigation solution
-        is built entirely using Flexbox and vanilla JavaScript. Below are some key takeaways.</p>
+      <p>This navigation solution is built entirely using Flexbox and vanilla JavaScript. Below are some key takeaways.</p>
 
       <ul>
-        <li>No dependencies. Built using Flexbox & vanilla JavaScript only.</li>
+        <li>No dependencies.</li>
         <li>Fully responsive.</li>
-        <li>Mobile menu closes when selecting a link, try it. Open the mobile menu and click on the 'Last Section'</li>
-        <li>Easy close mobile menu is closable via entire top row and right side page overlay</li>
+        <li>Built using Flexbox & vanilla JavaScript only.</li>
+        <li>Mobile menu closes when a link is selected (Like the 'Last Section' link on this page).</li>
+        <li>Easy close mobile menu. Closable via 'X' and right side page overlay.</li>
+        <li>Mobile menu scrollable (if its content goes beyond the screen)</li>
+        <li>Page and body are not scrollable (when mobile menu open).</li>
       </ul>
       <h3>Customizable</h3>
       <ul>
-        <li>Breakpoint variable - default at 800px</li>
-        <li>Sticky navigation bar available</li>
+        <li>Breakpoint variable - <strong>default at 800px</strong></li>
+        <li>Sticky navigation bar available.</li>
         <ul>
           <li>Toggle <button class="button-default">Sticky Nav</button> Sticky Nav is <span class="sticky-text"><strong>Off</strong></span></li>
           <li>Note: Sticky navigation bar requires padding and/or margin on the parent or adjacent element. For
-            example, on this page the adjacent <em>main</em> HTML element has a top margin of 6.5rem (nav height is
-            4.5rem) </li>
+            example, on this page the adjacent <em>main</em> HTML element has a top padding of 5.5rem (nav height is
+            4.5rem). </li>
         </ul>
       </ul>
       <h3>Another heading</h3>

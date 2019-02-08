@@ -1,6 +1,6 @@
 <p align="left">
   <a href="https://obscuredetour.github.io/simply-nav/">
-    <img width=580 src="assets/images/simply-nav.svg">
+    <img width=500 src="assets/images/logo-full-dark.svg">
   </a>
   <br>
   <a href="https://obscuredetour.github.io/simply-nav/">
@@ -19,10 +19,14 @@ This is a dead simple lightweight navigation built with flexbox and vanilla Java
 
 Try it here [https://obscuredetour.github.io/simply-nav/](https://obscuredetour.github.io/simply-nav/)
 
-- No dependencies. Built using Flexbox & vanilla JavaScript only.
+## Features
+
+- No dependencies.
 - Fully responsive.
-- Easy close mobile menu. Mobile menu closable via entire top row and right side page overlay.
+- Built using Flexbox & vanilla JavaScript only.
+- Mobile menu closable via the close *X* icon and right side page overlay.
 - Mobile menu closes when selecting a link. Useful so the mobile user doesn't have to close the menu after selecting an anchor link on the current page. Try by opening the [mobile menu](https://codepen.io/obscuredetour/full/XxNWLY/) and click on the 'Last Section'.
+- Mobile menu scrollable (if its content goes beyond the screen). Page and body are not scrollable.
 
 ### Customizable
 
