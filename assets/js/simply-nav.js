@@ -1,5 +1,5 @@
 /*
-  simply-nav.js
+  simply-nav.js - v1.2
   https://github.com/obscuredetour/simply-nav
 
   Licensed MIT © Jeffrey Summers
@@ -35,6 +35,16 @@
     disablePageScroll();
   };
 
+  // To default
+  toDefaults = () => {
+    // Close nav menu
+    sideNav.classList.remove('-open');
+    burger.classList.remove('open');
+    // Make sure scrolling is enabled
+    body.classList.remove('_disableScroll');
+    html.classList.remove('_disableScroll');
+  }
+
   // Event listeners
   toggleNavBtn.addEventListener('click', toggleNav);
   pageOverlay.addEventListener('click', toggleNav);
@@ -43,13 +53,42 @@
   // this is useful on mobile when clicking an anchor tag on the current page (eg. index.html#last-section)
   navLinks.forEach(el => {
     el.addEventListener('click', (event) => {
-      // Close nav menu
-      sideNav.classList.remove('-open');
-      // Make sure scrolling is enabled
-      body.classList.remove('_disableScroll');
-      html.classList.remove('_disableScroll');
+      toDefaults();
     });
   });
+
+
+  // when browser is resized (past breakpoint) reset to defaults
+  (function() {
+
+    window.addEventListener("resize", resizeThrottler, false);
+    let resizeTimeout;
+
+    function resizeThrottler() {
+      // ignore resize events as long as an actualResizeHandler execution is in the queue
+      if ( !resizeTimeout ) {
+        resizeTimeout = setTimeout(function() {
+          resizeTimeout = null;
+          actualResizeHandler();
+       
+         // The actualResizeHandler will execute at a rate of 15fps
+         }, 66);
+      }
+    }
+  
+    function actualResizeHandler() {
+      // handle the resize event
+
+      // Window resized width
+      let width = window.innerWidth;
+
+      // If resized greater than BREAKPOINT (default: 800px), then reset nav functions
+      if (width >= 800) {
+        toDefaults();      
+      }        
+    }
+  
+  }());
 
   
 

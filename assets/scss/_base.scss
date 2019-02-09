@@ -2,7 +2,7 @@
 //------- GENERIC RESET & NORMALIZE ---------//
 
 ::selection {
-  background: $indigo;
+  background: $deep-forest;
   color: white;
 }
 
@@ -103,9 +103,10 @@ h4 { color: $gray; font-size: 1.125rem; }
 ul, ol {
   margin: 0 0 1rem 0;
   padding-left: 2rem;
+  list-style-image: url('../images/check.svg');
   li {
     padding-left: 0.25rem;
-    margin-bottom: 0.5rem; }
+    margin-bottom: 0.75rem; }
 }
 hr {
   border: 0;
@@ -119,4 +120,18 @@ hr {
   &.major {
     margin: 3rem auto;
     border-bottom: solid 4px transparentize($sky, 0.5) }
+}
+
+.box {
+  display: inline-block;
+  padding: 1rem;
+  margin: 0 1rem 0 0;
+  max-width: 10rem;
+  border: 2px solid $stone;
+  border-radius: 8px;
+  > p {
+    margin: 0;
+    padding: 0;
+    width: unset;
+  }
 }

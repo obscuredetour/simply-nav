@@ -7,6 +7,12 @@ All notable changes to this project will be documented in this file.
 ### Change
 - Rewrite docs and readme.
 
+## [1.2.0] - 2019-02-08
+### Changed
+- Readme and docs.
+- JS tweaks - reset nav to defaults.
+- Fixed bug - burger close not syncing correctly.
+
 ## [1.1.4] - 2019-02-05
 ### Changed
 - Logo update.

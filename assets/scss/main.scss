@@ -12,6 +12,12 @@ main {
   > section {
     padding: 1rem;
     max-width: 40rem;
-    margin: 0 auto; 
+    margin: 2rem auto;
+    > .subtitle {
+      font-size: 1.125rem;
+      @media screen and (min-width: 590px) {
+        padding-bottom: 2rem;
+      }
+    }
   }
 }

@@ -27,12 +27,6 @@
     padding: 0 0 0.5rem 1rem;
     top: 0.25rem;
   }
-  &.-scale {
-    display: block;
-    max-width: 60%;
-    margin-bottom: 1rem;
-    height: auto;
-  }
   &.-fit {
     display: block;
     margin: 0 0 1.5rem 0;
@@ -69,3 +63,29 @@
 ._mt2, ._mt2:first-of-type { margin-top: -2rem }
 ._mthalf, ._mthalf:first-of-type { margin-top: -0.5rem }
 ._mt0, ._mt0:first-of-type { margin-top: 0 }
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  > * {
+    flex: 1 1 100%;
+    margin: 0 0 1rem 0;
+    &:last-child{ margin-bottom: 0 }
+  }
+  &.alt { flex-direction: row; }
+}
+
+@media screen and (min-width: 769px){
+  .flex-container {
+    flex-direction: row;
+    > * {
+      margin-right: 1rem;
+      margin-bottom: 0;
+      &:last-child{ margin-right: 0 }
+    }
+    &.alt {
+      flex-direction: column;
+      > * { margin-right: 0; }
+    }
+  }
+}
