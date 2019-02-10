@@ -24,7 +24,7 @@
       <ul class="nav-list" role="navigation">
         <div class="list -left">
           <li class="item">
-            <a class="link" href="#">Home</a>
+            <a class="link" href="https://github.com/obscuredetour/simply-nav">GitHub</a>
           </li>
           <li class="item">
             <a class="link" href="#features">Features</a>
@@ -59,24 +59,69 @@
         <li>No dependencies.</li>
         <li>Fully responsive.</li>
         <li>Built using Flexbox & vanilla JavaScript only.</li>
-        <li>Menu button changes to a close button 'X' (CSS only <a href="https://github.com/march08/animated-burgers">@animated-burgers</a> ) </li>
-        <li>Mobile menu closes when a link is selected (Like the 'Last Section' link on this page).</li>
+        <li>Mobile menu closes when a link is selected.</li>
         <li>Easy close mobile menu. Closable via 'X' and right side page overlay.</li>
-        <li>Mobile menu scrollable (if its content goes beyond the screen)</li>
-        <li>Page and body are not scrollable (when mobile menu open).</li>
+        <li>Buttons made for mobile. Big and large for optimal thumb usage.</li>
+        <li class="-new">Menu button animates to a close button 'X' (CSS only <a href="https://github.com/march08/animated-burgers" target="_blank">thx march08</a> )</li>
+        <li class="-new">Mobile menu scrollable (if its content goes beyond the screen)</li>
+        <li class="-new">Page and body are not scrollable (when mobile menu open).</li>
+        <li class="-new">Written in SCSS.</li>
+        <li class="-new">Written using <a href="https://rscss.io/" target="_blank">RSCSS</a> guidelines.</li>
       </ul>
+      
+      <hr class="major">
+  
       <h3 id="custom">Customizable</h3>
       <ul>
         <li>Breakpoint variable - <strong>default at 800px</strong></li>
-        <li>Sticky navigation bar available.</li>
+        <li>Sticky (fixed) navigation bar available. <a href="#sticky">See below</a>.</li>
+        <li class="new">Traditional or offset hamburger menu icons. <a href="">See below</a></li>
+        <li class="new">Bottom mobile nav bar for the bold! <a href="">See below</a></li>
       </ul>
-      <div class="box">
-        <p>Sticky Nav is <span class="sticky-text"><strong>Off</strong></span></p>
+      <hr>
+      <h4>Sticky (fixed) navigation</h4>
+
+      <div class="flex-container">
+        <div class="box">
+          <p>Sticky Nav is <span class="sticky-text"><strong>Off</strong></span></p>
+        </div>
+        <div class="box -alt">
+          <h5>Toggle sticky nav bar</h5>
+          <button class="button-default">Toggle</button>
+        </div>
       </div>
-      <button class="button-default">Toggle Sticky Nav</button>
       <p><strong>Note:</strong> Sticky navigation bar requires padding and/or margin on the parent or adjacent element. For
-        example, on this page the adjacent <em>main</em> HTML element has a top padding of 5.5rem (nav height is
-        4.5rem). </p>
+        example, on this page the adjacent <em>main</em> HTML element has a top padding of 6.5rem (nav height is 4.5rem).
+      </p>
+
+      <hr>
+
+      <h4 class="new-pill">Menu icon</h4>
+      <div class="flex-container">
+        <div class="box">
+          <p>Traditional icon is <span class="menu-text"><strong>Off</strong></span></p>
+        </div>
+        <div class="box -alt">
+          <h5>Toggle menu icon</h5>
+          <button class="button-default">Toggle</button>
+        </div>
+      </div>
+
+      <hr>
+
+      <h4 class="new-pill">Bottom mobile nav bar</h4>
+      <p>To enable the bottom mobile nav bar, add class <code>-bottom</code> on the <code>nav-wrapper</code> element.</p>
+      <div class="flex-container">
+        <div class="box">
+          <p>Bottom mobile nav bar is <span class="menu-text"><strong>Off</strong></span></p>
+        </div>
+        <div class="box -alt">
+          <h5>Toggle bottom mobile nav</h5>
+          <button class="button-default">Toggle</button>
+        </div>
+      </div>
+
+      <hr class="major">
       <!-- <h3>Another heading</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, iure dolorem consequuntur tenetur quasi
         assumenda voluptas est quae doloremque praesentium error, vel itaque pariatur dolores.</p>
@@ -85,10 +130,7 @@
         dolorum, iusto deserunt architecto soluta aperiam voluptas perspiciatis excepturi saepe, et optio non.
         Sapiente, tenetur!</p> -->
       <h3 id="last-section">Last section</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sint doloribus eveniet voluptate
-        molestias. Modi dicta expedita minima iusto ex eligendi, neque, ratione deleniti recusandae consectetur sunt!
-        Id facere, autem consequuntur placeat minima odio ipsum nihil vel? Iusto dolorem aliquam adipisci aliquid
-        magnam veniam, et nesciunt expedita placeat error praesentium?</p>
+      <p>This demonstrates an anchor link on the same page. The mobile menu closes when this link is chosen. This provides a more seamless experience for the user without requiring them to close the mobile menu after choosing a link.</p>
     </section>
 
   </main>

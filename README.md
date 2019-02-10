@@ -24,10 +24,11 @@ Try it here [https://obscuredetour.github.io/simply-nav/](https://obscuredetour.
 - No dependencies.
 - Fully responsive.
 - Built using Flexbox & vanilla JavaScript only.
-- Menu button changes to a close button 'X' [@animated-burgers](https://github.com/march08/animated-burgers)
-- Mobile menu closable via the close *X* icon and right side page overlay.
-- Mobile menu closes when selecting a link. Useful so the mobile user doesn't have to close the menu after selecting an anchor link on the current page. Try by opening the [mobile menu](https://codepen.io/obscuredetour/full/XxNWLY/) and click on the 'Last Section'.
+- Menu button animates to a close 'X' button. Thanks [animated-burgers](https://github.com/march08/animated-burgers)
+- Easy close mobile menu. Closable via the close *X* button and the right side page overlay.
+- Mobile menu closes when link is selected. Useful so the mobile user doesn't have to close the menu after choosing a link. Try by opening the *mobile menu* and click on the 'Last Section'.
 - Mobile menu scrollable (if its content goes beyond the screen). Page and body are not scrollable.
+- Rewritten using SCSS with [RCSS guidelines](https://rscss.io/).
 
 ### Customizable
 

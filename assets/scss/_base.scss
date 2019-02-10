@@ -55,11 +55,11 @@ a, a:visited {
   -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out, border-style 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-style 0.2s ease-in-out;
-  color: $cornflower;
+  color: $mint;
   text-decoration: none;
   outline: none; 
   &:hover {
-    color: $periwinkle;
+    color: $key-lime;
     text-decoration: none }
 }
 strong, b { color: $alabaster; font-weight: 600 }
@@ -99,18 +99,67 @@ h4, h5, h6 {
   font-size: 1.1rem;
   margin-bottom: 1rem;
   font-weight: 500 }
-h4 { color: $gray; font-size: 1.125rem; }
+h4 { font-size: 1.125rem; }
+h5 { font-size: 1.0625rem; color: $alto }
+
+// order/unordered lists, & 'new' emphasis mixin
+@mixin new-pill {
+  content: 'new';
+  position: absolute;
+  padding: 0.125rem 0.25rem;
+  border: 3px solid $honest;
+  border-radius: 25px;
+  background-color: $key-lime;
+  color: $deep-forest;
+  font-size: .6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  font-weight: 600;
+  left: -1.625rem;
+  top: -2px;
+}
+.new-pill {
+  position: relative;
+  &:after {
+    @include new-pill();
+    left: unset;
+    right: unset;
+    margin-left: 1rem;
+  }
+}
 ul, ol {
   margin: 0 0 1rem 0;
   padding-left: 2rem;
   list-style-image: url('../images/check.svg');
   li {
     padding-left: 0.25rem;
-    margin-bottom: 0.75rem; }
+    margin-bottom: 0.75rem;
+    &.-new {
+      list-style-image: none;
+      list-style-type: none;
+      padding-left: 1.75rem;
+      position: relative;
+      &:before {
+        @include new-pill();
+      }
+    }
+  }
 }
+
+pre, code{ font-size: 85% }
+code {
+  background-color: $jet;
+  border: 1px solid rgba(255, 255, 255, .1);
+  font-family: "SFMono-Regular", Consolas, "Source Code Pro", "Fira Code", "Liberation Mono", Menlo, Courier, monospace;
+  color: $gray;
+  padding: 1px 4px
+}
+
 hr {
   border: 0;
-  border-bottom: solid 2px transparentize($gray, 0.85);
+  border-top: solid 1px transparentize($gray, 0.85);
+  border-bottom: solid 1px transparentize($gray, 0.85);
+  border-radius: 8px;
   margin: 2rem auto 1rem auto;
   width: 100%;
   &.-minor {
@@ -119,16 +168,21 @@ hr {
     border-color: $raven }
   &.major {
     margin: 3rem auto;
-    border-bottom: solid 4px transparentize($sky, 0.5) }
+    border-top: solid 2px transparentize($mint, 0.5);
+    border-bottom: solid 2px transparentize($mint, 0.5);
+  }
 }
 
 .box {
   display: inline-block;
   padding: 1rem;
   margin: 0 1rem 0 0;
-  max-width: 10rem;
   border: 2px solid $stone;
   border-radius: 8px;
+  &.-alt {
+    border: none;
+    max-width: unset;
+  }
   > p {
     margin: 0;
     padding: 0;
