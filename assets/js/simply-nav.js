@@ -1,5 +1,5 @@
 /*
-  simply-nav.js - v1.2
+  simply-nav.js - v1.2.1
   https://github.com/obscuredetour/simply-nav
 
   Licensed MIT © Jeffrey Summers
@@ -89,7 +89,6 @@
     }
   
   }());
-
   
 
 })();

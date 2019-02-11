@@ -38,8 +38,6 @@
   }
 }
 
-._disableScroll { overflow-y: hidden !important }
-
 ._title {
   font-weight: 600;
   text-transform: uppercase;
@@ -53,8 +51,8 @@
 ._heather {
   color: $heather;
 }
-._sky {
-  color: $sky;
+._mint {
+  color: $mint;
 }
 
 // spacing

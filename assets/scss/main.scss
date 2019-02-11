@@ -1,7 +1,6 @@
 @import '_base';
 @import '_nav-wrapper';
 @import '_burger-squeeze';
-
 @import '_button-default';
 @import '_image';
 
@@ -30,4 +29,12 @@ main {
       padding-top: 6.5rem;
     }
    }
+}
+
+//footer
+.poweredby, .poweredby:first-of-type {
+  margin: 7rem auto 1rem;
+  font-size: 0.8125rem;
+  color: $gray;
+  text-align: center 
 }

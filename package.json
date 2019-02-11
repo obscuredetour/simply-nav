@@ -1,6 +1,6 @@
 {
   "name": "simply-nav",
-  "version": "1.1.4",
+  "version": "1.2.1",
   "description": "This is a dead simple lightweight navigation built with flexbox and vanilla JavaScript",
   "main": "index.js",
   "dependencies": {
@@ -8,6 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "nav": "node-sass -w assets/scss/nav.scss -o assets/css/",
     "scss": "node-sass -w assets/scss/ -o assets/css/",
     "serve": "browser-sync start --port 3004  --server --files '**/*.css, **/*.html, **/*.js'",
     "go": "npm run scss | npm run serve"
@@ -17,8 +18,8 @@
     "url": "git+https://github.com/obscuredetour/simply-nav.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Jeffrey Summers",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/obscuredetour/simply-nav/issues"
   },

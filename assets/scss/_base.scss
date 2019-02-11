@@ -130,10 +130,13 @@ h5 { font-size: 1.0625rem; color: $alto }
 ul, ol {
   margin: 0 0 1rem 0;
   padding-left: 2rem;
-  list-style-image: url('../images/check.svg');
-  li {
+  &.featured-list {
+    list-style-image: url('../images/check.svg');
+  }
+  > li {
     padding-left: 0.25rem;
     margin-bottom: 0.75rem;
+    > ul { margin-top: 0.75rem }
     &.-new {
       list-style-image: none;
       list-style-type: none;
@@ -149,10 +152,11 @@ ul, ol {
 pre, code{ font-size: 85% }
 code {
   background-color: $jet;
-  border: 1px solid rgba(255, 255, 255, .1);
+  border: 1px solid rgba(255, 255, 255, .15);
+  border-radius: 3px;
   font-family: "SFMono-Regular", Consolas, "Source Code Pro", "Fira Code", "Liberation Mono", Menlo, Courier, monospace;
-  color: $gray;
-  padding: 1px 4px
+  color: $alto;
+  padding: 2px 4px
 }
 
 hr {
@@ -163,10 +167,9 @@ hr {
   margin: 2rem auto 1rem auto;
   width: 100%;
   &.-minor {
-    margin: 0.5rem -0.5rem;
-    width: calc(100% + 1rem);
-    border-color: $raven }
-  &.major {
+    margin: 1rem 0;
+    border-color: transparent }
+  &.-major {
     margin: 3rem auto;
     border-top: solid 2px transparentize($mint, 0.5);
     border-bottom: solid 2px transparentize($mint, 0.5);

@@ -5,7 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Simply Navigation</title>
+  <title>Simply Navigation - A lightweight navigation component</title>
+  <meta property="og:title" content="Simply Navigation"/>
+  <meta name="description" property="og:description" content="A simple navigation component built using vanilla JS &amp; Flexbox."/>
+  <meta property="og:url" content="https://github.com/obscuredetour/simply-nav/index.html"/>
+  <meta property="og:image" content="https://raw.githubusercontent.com/obscuredetour/simply-nav/master/assets/images/logo-full-dark.svg"/>
+
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
@@ -32,11 +37,11 @@
           <li class="item">
             <a class="link" href="#custom">Customizable</a>
           </li>
-          <!-- <li class="item">
-            <a class="link" href="#">Third Link</a>
-          </li> -->
           <li class="item">
-            <a class="link" href="#last-section">Last section</a>
+            <a class="link" href="#how-to-use">How to use</a>
+          </li>
+          <li class="item">
+            <a class="link" href="#example">Example</a>
           </li>
         </div>
         <div class="list -right">
@@ -45,6 +50,7 @@
       </ul>
     </nav>
   </header>
+
   <main>
 
     <section>
@@ -55,85 +61,102 @@
       <p class="_mthalf subtitle">Lightweight simple navigation built with flexbox and vanilla JavaScript</p>
       
       <h3 id="features">Features</h3>
-      <ul>
+      <ul class="featured-list">
         <li>No dependencies.</li>
         <li>Fully responsive.</li>
         <li>Built using Flexbox & vanilla JavaScript only.</li>
         <li>Mobile menu closes when a link is selected.</li>
         <li>Easy close mobile menu. Closable via 'X' and right side page overlay.</li>
         <li>Buttons made for mobile. Big and large for optimal thumb usage.</li>
-        <li class="-new">Menu button animates to a close button 'X' (CSS only <a href="https://github.com/march08/animated-burgers" target="_blank">thx march08</a> )</li>
+        <li class="-new">Menu button animates to a close button 'X' (CSS only - <a href="https://github.com/march08/animated-burgers" target="_blank">thx march08</a>)</li>
         <li class="-new">Mobile menu scrollable (if its content goes beyond the screen)</li>
         <li class="-new">Page and body are not scrollable (when mobile menu open).</li>
         <li class="-new">Written in SCSS.</li>
         <li class="-new">Written using <a href="https://rscss.io/" target="_blank">RSCSS</a> guidelines.</li>
       </ul>
       
-      <hr class="major">
+      <hr class="-major">
   
       <h3 id="custom">Customizable</h3>
-      <ul>
+      <ul class="featured-list">
         <li>Breakpoint variable - <strong>default at 800px</strong></li>
-        <li>Sticky (fixed) navigation bar available. <a href="#sticky">See below</a>.</li>
-        <li class="new">Traditional or offset hamburger menu icons. <a href="">See below</a></li>
-        <li class="new">Bottom mobile nav bar for the bold! <a href="">See below</a></li>
+        <li>Sticky (fixed) navigation bar available. <a href="#sticky-nav">See below</a>.</li>
+        <li class="-new">Traditional or offset hamburger menu icons. <a href="#menu-icon">See below</a></li>
+        <li class="-new">Bottom mobile nav bar for the bold! <a href="#bottom-nav">See below</a></li>
       </ul>
-      <hr>
+      <hr id="sticky-nav">
       <h4>Sticky (fixed) navigation</h4>
-
+      <p>To enable a fixed nav bar, add class <code>-sticky</code> to the <code>nav-wrapper</code> element.</p>
       <div class="flex-container">
         <div class="box">
           <p>Sticky Nav is <span class="sticky-text"><strong>Off</strong></span></p>
         </div>
         <div class="box -alt">
           <h5>Toggle sticky nav bar</h5>
-          <button class="button-default">Toggle</button>
+          <button class="button-default -sticky">Toggle</button>
         </div>
       </div>
-      <p><strong>Note:</strong> Sticky navigation bar requires padding and/or margin on the parent or adjacent element. For
-        example, on this page the adjacent <em>main</em> HTML element has a top padding of 6.5rem (nav height is 4.5rem).
+      <p><strong>Note:</strong> Sticky navigation bar requires padding and/or margin on the parent or adjacent element. For example, on this page the adjacent <em>main</em> HTML element has a top padding of 6.5rem (nav height is 4.5rem).
       </p>
 
-      <hr>
+      <hr id="menu-icon">
 
       <h4 class="new-pill">Menu icon</h4>
+      <p>To enable the traditional menu icon, remove class <code>-offset</code> from the <code>burger</code> element.</p>
       <div class="flex-container">
         <div class="box">
           <p>Traditional icon is <span class="menu-text"><strong>Off</strong></span></p>
         </div>
         <div class="box -alt">
           <h5>Toggle menu icon</h5>
-          <button class="button-default">Toggle</button>
+          <button class="button-default -menu">Toggle</button>
         </div>
       </div>
 
-      <hr>
+      <hr id="bottom-nav">
 
       <h4 class="new-pill">Bottom mobile nav bar</h4>
       <p>To enable the bottom mobile nav bar, add class <code>-bottom</code> on the <code>nav-wrapper</code> element.</p>
       <div class="flex-container">
         <div class="box">
-          <p>Bottom mobile nav bar is <span class="menu-text"><strong>Off</strong></span></p>
+          <p>Bottom mobile nav bar is <span class="bottomnav-text"><strong>Off</strong></span></p>
         </div>
         <div class="box -alt">
           <h5>Toggle bottom mobile nav</h5>
-          <button class="button-default">Toggle</button>
+          <button class="button-default -bottomnav">Toggle</button>
         </div>
       </div>
+      <p><strong>Note:</strong> Bottom mobile nav bar requires a sticky navigation bar. To enable a fixed nav bar, add class <code>-sticky</code> to the <code>nav-wrapper</code> element. See the <a href="">Sticky navigation</a> section for additional info.
+      </p>
 
-      <hr class="major">
-      <!-- <h3>Another heading</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, iure dolorem consequuntur tenetur quasi
-        assumenda voluptas est quae doloremque praesentium error, vel itaque pariatur dolores.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A natus deserunt quaerat assumenda explicabo!
-        Explicabo placeat autem quod dolore! Ab molestias aliquam alias aut dolores quibusdam tempora qui velit rem
-        dolorum, iusto deserunt architecto soluta aperiam voluptas perspiciatis excepturi saepe, et optio non.
-        Sapiente, tenetur!</p> -->
-      <h3 id="last-section">Last section</h3>
-      <p>This demonstrates an anchor link on the same page. The mobile menu closes when this link is chosen. This provides a more seamless experience for the user without requiring them to close the mobile menu after choosing a link.</p>
+      <hr class="-major" id="how-to-use">
+      <h3>How to use</h3>
+      <p>Clone or download the repository to build a static website. Or alternatively insert the respective files into your project.</p>
+      <ul>
+        <li><code>simply-nav.js</code> - has all necessary JavaScript functions
+          <ul>
+            <li>File can be placed into your project or the anonymous function inside can be pasted into an existing JS file or <code>&lt;script&gt;</code> tag within an HTML file.</li>
+          </ul>
+        </li>
+        <li><code>nav.css</code> - has all necessary CSS styles for the navigation
+          <ul>
+            <li>File can be placed into your project or pasted into an existing CSS file or <code>&lt;style&gt;</code> tag within an HTML file.</li>
+          </ul>
+        </li>
+        <li>Markup structure can be found in <code>index.html</code>
+          <ul>
+            <li>The <code>nav-wrapper</code> element contains all necessary markup for Simply Navigation to function.</li>
+          </ul>
+        </li>
+      </ul>
+      <h3 id="example">Example</h3>
+      <p>This is an example that demonstrates an anchor link on the same page. The mobile menu closes when this link is chosen. This provides a more seamless experience for the user without requiring them to close the mobile menu after choosing a link.</p>
     </section>
 
   </main>
+  <footer class="footer">
+    <p class="poweredby">Powered with ❤️ by <a target="_blank" href="https://obscuredetour.com">obscure detour</a>. Located on <a target="_blank" href="https://github.com/obscuredetour/simply-nav">GitHub</a> under an <a target="_blank" href="https://github.com/obscuredetour/simply-nav/blob/master/LICENSE">MIT license</a>.</p>
+  </footer>
 
 
 

@@ -1,0 +1,18 @@
+// nav breakpoint variable
+$breakpoint: 800px;
+$nav-height: 4.5rem;
+
+// Background colors & shades of grays
+$jet: hsl(0, 0%, 13%);
+$raven: hsl(0, 0%, 23%);
+$pearl: hsl(0, 0%, 88%);
+$gray: hsl(0, 0%, 69%);
+
+$lucky: hsl(123, 38%, 63%);
+
+// text color
+$text-color: $pearl;
+$link-color: $lucky;
+
+@import '_nav-wrapper';
+@import '_burger-squeeze';

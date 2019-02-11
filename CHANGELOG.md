@@ -4,8 +4,17 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 ### Add
 - Create gif for closing of mobile menu on click.
-### Change
-- Rewrite docs and readme.
+
+## [1.2.1] - 2019-02-11
+### Changed
+- Readme, docs reflect updated how to use instructions.
+- `logo-full-dark` updated.
+
+### Added
+- Page JS functions for new feature toggles.
+- `nav.css` created.
+- Footer element with links.
+- MIT license.
 
 ## [1.2.0] - 2019-02-08
 ### Changed
