@@ -4,7 +4,7 @@
   "description": "This is a dead simple lightweight navigation built with flexbox and vanilla JavaScript",
   "main": "index.js",
   "dependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   },
   "devDependencies": {},
   "scripts": {
