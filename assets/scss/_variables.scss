@@ -1,6 +1,12 @@
 // nav breakpoint variable
-$breakpoint: 800px;
+$breakpoint: 800;
 $nav-height: 4.5rem;
+
+// media query breakpoints
+$large: 1280;
+$medium: 1024;
+$small: 768;
+$xsmall: 480;
 
 // Background colors & shades of grays
 $jet: hsl(0, 0%, 13%);

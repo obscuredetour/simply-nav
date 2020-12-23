@@ -8,13 +8,12 @@
   const bottomNavText = document.querySelector('.bottomnav-text');
   const on = '<strong>On</strong>';
   const off = '<strong>Off</strong>';
-  const navWrapper = document.querySelector('.nav-wrapper');
-  const mainWrapper = document.querySelector('main');
+  const navEl = document.querySelector('.nav');
   const burgerIcon = document.querySelector('.burger');
 
   stickyToggle.addEventListener('click', () => {
-    navWrapper.classList.toggle('-sticky');
-    (navWrapper.classList.contains('-sticky') ? stickyText.innerHTML = on : stickyText.innerHTML = off);
+    navEl.classList.toggle('-sticky');
+    (navEl.classList.contains('-sticky') ? stickyText.innerHTML = on : stickyText.innerHTML = off);
   });
 
   menuToggle.addEventListener('click', () => {
@@ -23,10 +22,9 @@
   });
 
   bottomNavToggle.addEventListener('click', () => {
-    navWrapper.classList.toggle('-sticky');
-    navWrapper.classList.toggle('-bottom');
-    mainWrapper.classList.toggle('-bottomnav');
-    if (navWrapper.classList.contains('-bottom')) {
+    navEl.classList.contains('-sticky') ? navEl.classList.remove('-sticky') : navEl.classList.add('-sticky');
+    navEl.classList.toggle('-bottom');
+    if (navEl.classList.contains('-bottom')) {
       bottomNavText.innerHTML = on;
       stickyText.innerHTML = on;
     } else {

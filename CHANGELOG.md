@@ -1,9 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
-
-## [Unreleased]
-### Add
-- Create gif for closing of mobile menu on click.
+## [1.3.0] - 2020-12-22
+### Changed
+- Left & Right side layouts now supported. Right-side is now default.
+- Refactored some SCSS, cleaned up some styles, animations, & JS.
+- No longer maintaining standalone version (legacy version will remain).
+  - If any sad to see this go, open an issue an and I'll consider supporting it again.
+- Due to all of the above, DOM changes occurred and a version point bump.
+### Added
+- ARIA/Accessibility support.
 
 ## [1.2.1] - 2019-02-20
 ### Changed

@@ -1,0 +1,151 @@
+@function rem($size) {
+  $remSize: $size / 16;
+  @return #{$remSize}rem;
+}
+
+@mixin font-size($size){
+  font-size: #{$size}px; //Fallback in px
+  font-size: rem($size);
+}
+
+@mixin sizes($min, $max:0){
+  $min_str: $min/16 + rem;
+  $max_str: ($max - 1)/16 + rem;
+
+  @if $min >= 0 {
+    @if $max > $min {
+      @media screen and (min-width: $min_str) and (max-width: $max_str){
+        @content;
+      }
+    }
+    @else{
+      @media screen and (min-width: $min_str){
+        @content;
+      }
+    }
+  }
+  @else{
+    @media screen and (max-width: $max_str){
+      @content;
+    }
+  }
+}
+
+@mixin column-size($column_ct, $margin){
+  box-sizing: border-box;
+  $total_margin: $margin * ($column_ct - 1);
+  width: calc(#{100/$column_ct}% - #{ceil($total_margin / $column_ct)}px);
+  margin-right: #{$margin}px;
+  // &:nth-child(#{$column_ct}n){
+  //   margin-right: 0;
+  // }
+}
+
+@mixin container{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  box-sizing: border-box;
+}
+
+@mixin default-padding(){
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include sizes($large){
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@mixin focus-outline($color: $mint){
+  &:focus {
+    outline: 2px solid $color !important;
+  }
+}
+
+@mixin plain-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin new-pill {
+  content: 'new';
+  position: absolute;
+  padding: 0.125rem 0.25rem;
+  border: 3px solid $honest;
+  border-radius: 25px;
+  background-color: $key-lime;
+  color: $deep-forest;
+  font-size: .6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  font-weight: 600;
+  left: -1.625rem;
+  top: -2px;
+}
+
+@mixin link-hover($color: $text-color, $hover: $key-lime){
+  color: $color;
+  transition: color 200ms ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover{
+    color: $hover;
+  }
+}
+
+@mixin plain-button(){
+  padding: 0;
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  @include focus-outline;
+}
+
+// @mixin button($color: $red, $hover: $dark_red){
+//   appearance: none;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   text-decoration: none;
+//   box-sizing: border-box;
+//   border: 2px solid transparent;
+//   border-radius: 0;
+//   background-color: $color;
+//   color: #fff;
+//   font-weight: 600;
+//   letter-spacing: .2px;
+//   min-height: rem(46);
+//   padding: 0.25rem 2rem;
+//   transition: color 300ms ease, background-color 300ms ease;
+//   font-size:rem(18);
+
+//   &:focus{
+//     outline: 1px solid $text;
+//   }
+
+//   &:hover {
+//     background-color: $hover;
+//   }
+
+//   &:disabled{
+//     background-color: #fff;
+//     border: 2px solid $med_gray;
+//     color: $med_gray;
+//   }
+// }
+
+// @mixin button-tertiary($color: $text){
+//   @include button;
+//   border: 2px solid $red;
+//   background-color: transparent;
+//   color: $color;
+
+//   &:hover {
+//     color: #fff;
+//     background-color: $red;
+//   }
+// }

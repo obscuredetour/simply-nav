@@ -1,34 +1,44 @@
 @import '_base';
-@import '_nav-wrapper';
-@import '_burger-squeeze';
-@import '_button-default';
-@import '_image';
 
 //--------- styling for rest of page -------//
 main {
   margin: 0 auto;
   padding-top: 4.5rem;
+
   > section {
     padding: 1rem;
     max-width: 40rem;
     margin: 2rem auto;
+
     > .subtitle {
       padding-bottom: 1rem;
       font-size: 1.125rem;
+
       @media screen and (min-width: 590px) {
         padding-bottom: 4rem;
       }
     }
   }
+
   @media screen and (min-width: $breakpoint) {
     padding-top: 6.5rem;
   }
-  &.-bottomnav { 
-    padding-top: 0;
-    @media screen and (min-width: $breakpoint) {
-      padding-top: 6.5rem;
+
+  .featured-list.-features {
+    @include sizes($small){
+      column-count: 2;
+      column-gap: 2.5rem;
     }
-   }
+  }
+}
+
+//handle bottom nav
+.nav.-sticky.-bottom{
+  @include sizes(0, $breakpoint){
+    + main {
+      padding-top: 0;
+    }
+  }
 }
 
 //footer

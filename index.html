@@ -16,40 +16,122 @@
 
 <body>
   <!-- Navigation / nav-wrapper component -->
-  <header class="nav-wrapper">
-    <nav class="nav">
-      <button class="toggle-nav" type="button">
+  <!-- Right-side hamburger markup -->
+  <header class="nav -right-aligned">
+    <nav class="nav-main">
+      <a class="nav-logo -mobile" href="#">
+        <img class="nav-logo__image" id="logo" src="assets/images/logo.svg" alt="Logo">
+      </a>
+      <ul class="nav-list" role="menu" aria-hidden="true">
+        <div class="nav-list__wrapper">
+          <li class="nav-list__item" role="none">
+            <a class="nav-logo" href="#">
+              <img class="nav-logo__image" id="logo" src="assets/images/logo.svg" alt="Logo">
+            </a>
+          </li>
+          <li class="nav-list__item" role="none">
+            <a class="nav-list__link" role="menuitem" href="https://github.com/obscuredetour/simply-nav">GitHub</a>
+          </li>
+          <li class="nav-list__item" role="none">
+            <a class="nav-list__link" role="menuitem" href="#features">Features</a>
+          </li>
+          <li class="nav-list__item" role="none">
+            <a class="nav-list__link" role="menuitem" href="#custom">Customizable</a>
+          </li>
+          <li class="nav-list__item" role="none">
+            <a class="nav-list__link" role="menuitem" href="#how-to-use">How to use</a>
+          </li>
+          <li class="nav-list__item" role="none">
+            <a class="nav-list__link" role="menuitem" href="#example">Example Link</a>
+          </li>
+        </div>
+      </ul>
+      <button class="nav-toggle" type="button" aria-expanded="false">
         <div class="burger -squeeze -offset" type="button">
           <span class="burger-lines"></span>
         </div>
       </button>
-      <a class="logo-link" href="#">
-        <img class="logo" id="logo" src="assets/images/logo.svg" alt="Logo">
-      </a>
-      <ul class="nav-list" role="navigation">
-        <div class="list -left">
-          <li class="item">
-            <a class="link" href="https://github.com/obscuredetour/simply-nav">GitHub</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#features">Features</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#custom">Customizable</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#how-to-use">How to use</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#example">Example</a>
-          </li>
+    </nav>
+    <ul class="nav-list -mobile" role="menu" aria-hidden="true">
+      <div class="nav-list__wrapper">
+        <li class="nav-list__item" role="none">
+          <a class="nav-list__link" role="menuitem" href="https://github.com/obscuredetour/simply-nav">GitHub</a>
+        </li>
+        <li class="nav-list__item" role="none">
+          <a class="nav-list__link" role="menuitem" href="#features">Features</a>
+        </li>
+        <li class="nav-list__item" role="none">
+          <a class="nav-list__link" role="menuitem" href="#custom">Customizable</a>
+        </li>
+        <li class="nav-list__item" role="none">
+          <a class="nav-list__link" role="menuitem" href="#how-to-use">How to use</a>
+        </li>
+        <li class="nav-list__item" role="none">
+          <a class="nav-list__link" role="menuitem" href="#example">Example Link</a>
+        </li>
+      </div>
+      <div class="nav-overlay"></div>
+    </ul>
+  </header>
+
+  <!-- Navigation / nav-wrapper component -->
+  <!-- Left-side hamburger markup -->
+  <!-- <header class="nav">
+    <nav class="nav-main">
+      <button class="nav-toggle" type="button" aria-expanded="false">
+        <div class="burger -squeeze -offset" type="button">
+          <span class="burger-lines"></span>
         </div>
-        <div class="list -right">
-          <div class="overlay"></div>
+      </button>
+      <ul class="nav-list" role="menu" aria-hidden="true">
+        <div class="nav-list__wrapper">
+          <li class="nav-list__item" role="none">
+            <a class="nav-logo" href="#">
+              <img class="nav-logo__image" id="logo" src="assets/images/logo.svg" alt="Logo">
+            </a>
+          </li>
+          <li class="nav-list__item" role="none">
+            <a class="nav-list__link" role="menuitem" href="https://github.com/obscuredetour/simply-nav">GitHub</a>
+          </li>
+          <li class="nav-list__item" role="none">
+            <a class="nav-list__link" role="menuitem" href="#features">Features</a>
+          </li>
+          <li class="nav-list__item" role="none">
+            <a class="nav-list__link" role="menuitem" href="#custom">Customizable</a>
+          </li>
+          <li class="nav-list__item" role="none">
+            <a class="nav-list__link" role="menuitem" href="#how-to-use">How to use</a>
+          </li>
+          <li class="nav-list__item" role="none">
+            <a class="nav-list__link" role="menuitem" href="#example">Example</a>
+          </li>
         </div>
       </ul>
+      <a class="nav-logo -mobile" href="#">
+        <img class="nav-logo__image" id="logo" src="assets/images/logo.svg" alt="Logo">
+      </a>
     </nav>
-  </header>
+    <ul class="nav-list -mobile" role="menu" aria-hidden="true">
+      <div class="nav-list__wrapper">
+        <li class="nav-list__item" role="none">
+          <a class="nav-list__link" role="menuitem" href="https://github.com/obscuredetour/simply-nav">GitHub</a>
+        </li>
+        <li class="nav-list__item" role="none">
+          <a class="nav-list__link" role="menuitem" href="#features">Features</a>
+        </li>
+        <li class="nav-list__item" role="none">
+          <a class="nav-list__link" role="menuitem" href="#custom">Customizable</a>
+        </li>
+        <li class="nav-list__item" role="none">
+          <a class="nav-list__link" role="menuitem" href="#how-to-use">How to use</a>
+        </li>
+        <li class="nav-list__item" role="none">
+          <a class="nav-list__link" role="menuitem" href="#example">Example</a>
+        </li>
+      </div>
+      <div class="nav-overlay"></div>
+    </ul>
+  </header> -->
 
   <main>
 
@@ -61,32 +143,35 @@
       <p class="_mthalf subtitle">Lightweight simple navigation built with flexbox and vanilla JavaScript</p>
       
       <h3 id="features">Features</h3>
-      <ul class="featured-list">
+      <ul class="featured-list -features">
         <li>No dependencies.</li>
         <li>Fully responsive.</li>
         <li>Built using Flexbox & vanilla JavaScript only.</li>
         <li>Mobile menu closes when a link is selected.</li>
-        <li>Easy close mobile menu. Closable via 'X' and right side page overlay.</li>
-        <li>Buttons made for mobile. Big and large for optimal thumb usage.</li>
-        <li class="-new">Menu button animates to a close button 'X' (CSS only - <a href="https://github.com/march08/animated-burgers" target="_blank">thx march08</a>)</li>
-        <li class="-new">Mobile menu scrollable (if its content goes beyond the screen)</li>
-        <li class="-new">Page and body are not scrollable (when mobile menu open).</li>
-        <li class="-new">Written in SCSS.</li>
-        <li class="-new">Written using <a href="https://rscss.io/" target="_blank">RSCSS</a> guidelines.</li>
+        <li>Easy close mobile menu. Closable via 'X' and alt-side page overlay.</li>
+        <li>Buttons & links made for mobile. Large footprint for optimal finger usage.</li>
+        <li>Menu button animates to a close button 'X' (CSS only - <a href="https://github.com/march08/animated-burgers" target="_blank">thx march08</a>)</li>
+        <li>Mobile menu scrollable (if its content goes beyond the screen)</li>
+        <li>Page and body are not scrollable (when mobile menu open).</li>
+        <li>Written in SCSS.</li>
+        <li>Written using <a href="https://rscss.io/" target="_blank">RSCSS</a> guidelines.</li>
+        <li class="-new">Left &amp; Right side layouts now supported.</li>
+        <li class="-new">ARIA/Accessibility updates, keyboard navigation.</li>
       </ul>
       
       <hr class="-major">
   
+      <h2 id="custom">Features</h2>
       <h3 id="custom">Customizable</h3>
       <ul class="featured-list">
         <li>Breakpoint variable - <strong>default at 800px</strong></li>
         <li>Sticky (fixed) navigation bar available. <a href="#sticky-nav">See below</a>.</li>
-        <li class="-new">Traditional or offset hamburger menu icons. <a href="#menu-icon">See below</a></li>
-        <li class="-new">Bottom mobile nav bar for the bold! <a href="#bottom-nav">See below</a></li>
+        <li>Traditional or offset hamburger menu icons. <a href="#menu-icon">See below</a></li>
+        <li>Bottom mobile nav bar for the bold! <a href="#bottom-nav">See below</a></li>
       </ul>
       <hr id="sticky-nav">
       <h4>Sticky (fixed) navigation</h4>
-      <p>To enable a fixed nav bar, add class <code>-sticky</code> to the <code>nav-wrapper</code> element.</p>
+      <p>To enable a fixed nav bar, add class <code>-sticky</code> to the <code>nav-main</code> element.</p>
       <div class="flex-container">
         <div class="box">
           <p>Sticky Nav is <span class="sticky-text"><strong>Off</strong></span></p>
@@ -116,7 +201,7 @@
       <hr id="bottom-nav">
 
       <h4 class="new-pill">Bottom mobile nav bar</h4>
-      <p>To enable the bottom mobile nav bar, add class <code>-bottom</code> on the <code>nav-wrapper</code> element.</p>
+      <p>To enable the bottom mobile nav bar, add class <code>-bottom</code> on the <code>nav-main</code> element.</p>
       <div class="flex-container">
         <div class="box">
           <p>Bottom mobile nav bar is <span class="bottomnav-text"><strong>Off</strong></span></p>
@@ -126,7 +211,7 @@
           <button class="button-default -bottomnav">Toggle</button>
         </div>
       </div>
-      <p><strong>Note:</strong> Bottom mobile nav bar requires a sticky navigation bar. To enable a fixed nav bar, add class <code>-sticky</code> to the <code>nav-wrapper</code> element. See the <a href="#sticky-nav">Sticky navigation</a> section for additional info.
+      <p><strong>Note:</strong> Bottom mobile nav bar requires a sticky navigation bar. To enable a fixed nav bar, add class <code>-sticky</code> to the <code>nav-main</code> element. See the <a href="#sticky-nav">Sticky navigation</a> section for additional info.
       </p>
 
       <hr class="-major" id="how-to-use">
@@ -145,12 +230,12 @@
         </li>
         <li>Markup structure can be found in <code>index.html</code>
           <ul>
-            <li>The <code>nav-wrapper</code> element contains all necessary markup for Simply Navigation to function.</li>
+            <li>The <code>nav-main</code> element contains all necessary markup for Simply Navigation to function.</li>
           </ul>
         </li>
         <li>Standalone HTML file will be making a comeback in a future version.</li>
       </ul>
-      <h3 id="example">Example</h3>
+      <h3 id="example">Example Link</h3>
       <p>This is an example that demonstrates an anchor link on the same page. The mobile menu closes when this link is chosen. This provides a more seamless experience for the user without requiring them to close the mobile menu after choosing a link.</p>
     </section>
 
