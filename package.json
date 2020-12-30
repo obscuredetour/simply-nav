@@ -1,6 +1,6 @@
 {
   "name": "simply-nav",
-  "version": "1.2.1",
+  "version": "1.3.1",
   "description": "This is a dead simple lightweight navigation built with flexbox and vanilla JavaScript",
   "main": "index.js",
   "dependencies": {

@@ -1,5 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
+## [1.3.1] - 2020-12-29
+### Changed
+- Fixed overflow bug.
+
 ## [1.3.0] - 2020-12-22
 ### Changed
 - Left & Right side layouts now supported. Right-side is now default.
